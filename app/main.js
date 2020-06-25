@@ -65,6 +65,23 @@ function initWindowMenu(){
                     }
                 }
             ]
+        },
+        {
+            label: 'Rboard',
+            submenu: [
+                {
+                    label: '書き込み',
+                    click (){
+
+                    }
+                },
+                {
+                    label: 'クリーン',
+                    click (){
+                        
+                    }
+                }
+            ]
         }
     ]
  
