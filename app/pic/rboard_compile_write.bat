@@ -7,5 +7,5 @@ cd mruby-2.0.1-win
 call mrbc.exe ../mrubyc_ide1.02_win/test/led.rb
 echo "compile finish"
 cd ../mrubyc_ide1.02_win
-call mrbwrite.exe
+call mrbwrite.exe -l COM4 -s 19200 test/led.mrb
 echo "finish"
