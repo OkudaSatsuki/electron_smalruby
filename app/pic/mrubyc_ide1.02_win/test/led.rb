@@ -1,6 +1,7 @@
-while true
-  leds_write(1)
-  sleep(2)
-  leds_write(0)
-  sleep(2)
+pinMode(1,0)
+while true do
+  digitalWrite(1,1)
+  sleep(1)
+  digitalWrite(1,0)
+  sleep(1)
 end
