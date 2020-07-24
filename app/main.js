@@ -72,7 +72,8 @@ function initWindowMenu(){
                 {
                     label: '書き込み',
                     click (){
-
+                        subWindow = new BrowserWindow({width: 420, height: 280});
+                        subWindow.loadFile('flash_rboard.html');
                     }
                 },
                 {

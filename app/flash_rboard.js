@@ -1,7 +1,7 @@
-const { spawn } = require('child_process');//準備
+const { spawn } = require('child_process');
 const div = document.getElementById('box11');
 const p = document.createElement('p');
-const ret = spawn('cd', ['resources', '&', 'cd','app', '&', 'flash.bat'] ,{ shell: true}); //flash.batを実行、機械(マイコン)に書き込む
+const ret = spawn('cd', ['resources', '&', 'cd','app', '&', 'rboard_compile_write.bat'] ,{ shell: true}); 
 ret.stderr.on('data', (err) => {
     console.log(err); 
     p.textContent += err;
@@ -17,4 +17,3 @@ ret.stdout.on('data', (data) => {
     div.innerHTML = p.textContent;
     scrollby(0, 300);       
 })
-
